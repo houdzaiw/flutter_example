@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 进入 Git 仓库目录
-cd ~/my_project || exit
+cd /Users/huili/Downloads/flutter_example || exit
 
 # 获取远程分支的最新提交 ID
 REMOTE_COMMIT=$(git ls-remote origin -h refs/heads/main | awk '{print $1}')
