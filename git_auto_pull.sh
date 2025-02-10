@@ -12,7 +12,7 @@ LOCAL_COMMIT=$(git rev-parse HEAD)
 # 如果远程有新提交，则执行 `git pull`
 if [[ "$REMOTE_COMMIT" != "$LOCAL_COMMIT" ]]; then
     echo "检测到远程有新提交，正在拉取最新代码..."
-    git pull origin main
+    git pull
 else
     echo "代码已是最新，无需更新。"
 fi
